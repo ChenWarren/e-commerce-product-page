@@ -33,59 +33,87 @@
 <body>
 
   <!-- Navbar -->
-  <nav>
-    <img src="./images/logo.svg" alt="sneakers logo">
-    <ul>
-      <li>Collections</li>
-      <li>Men</li>
-      <li>Women</li>
-      <li>About</li>
-      <li>Contact</li>
-    </ul>
-    <img src="./images/icon-cart.svg" alt="cart icon">
-    <img src="./images/image-avatar.png" alt="avatar image">
-  </nav>
+
+  <!-- Desktop menu -->
+  <nav class="row-100 main-axis-center ">
+    <div class="row-80 main-axis-between cross-axis-center border-bottom-1">
+      <div class="row gap-horizontal-2">
+        <div class="row logo-wrapper padding-vertical-2">
+          <img src="./images/logo.svg" alt="sneakers logo">
+        </div>
   
-  <main>
-    <!-- Product images -->
-    <article>
-      <section>
-        <img src="./images/image-product-1.jpg" alt="shoe image">
-        <ul>
-          <li>
-            <img src="./images/image-product-1-thumbnail.jpg" alt="shoe thumbnail 1">
+        <ul id="desktop-menu">
+          <li class="padding-vertical-2">
+            <a href="#collections">Collections</a> 
           </li>
-          <li>
-            <img src="./images/image-product-2-thumbnail.jpg" alt="shoe thumbnail 1">
+          <li class="padding-vertical-2">
+            <a href="#men">Men</a> 
           </li>
-          <li>
-            <img src="./images/image-product-3-thumbnail.jpg" alt="shoe thumbnail 1">
+          <li class="padding-vertical-2">
+            <a href="#women">Women</a> 
           </li>
-          <li>
-            <img src="./images/image-product-4-thumbnail.jpg" alt="shoe thumbnail 1">
+          <li class="padding-vertical-2">
+            <a href="#about">About</a> 
+          </li>
+          <li class="padding-vertical-2">
+            <a href="contact">Contact</a> 
           </li>
         </ul>
-      </section>
+      </div>
 
-      <!-- Product details -->
-      <section>
-        <h4>Sneaker Company</h4>
-        <h1>Fall Limited Edition Sneakers</h1>
-        <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
-        <h3>$125.00</h3>
-        <h4>50%</h4>
-        <h5>$250.00</h5>
-        <div>
-          <img src="./images/icon-minus.svg" alt="minus icon">
-          <p>0</p>
-          <img src="./images/icon-plus.svg" alt="pluse icon">
+      <div class="row gap-horizontal-2 cross-axis-center">
+        <div class="row max-width-40">
+          <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="#69707D" fill-rule="nonzero"/></svg>
         </div>
-        <button>
-          <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill-rule="nonzero"/></svg>
-          Add to cart
-        </button>
-      </section>
-    </article>
+        <div class="row max-width-60">
+          <img src="./images/image-avatar.png" alt="avatar image" width="50">
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <main class="col-100 main-axis-center cross-axis-center padding-vertical-4">
+    <!-- Product images -->
+      <article class="row-80 main-axis-center">
+        <section class="col-50 padding-horizontal-1">
+          <div class="row-60 max-width-300">
+            <img src="./images/image-product-1.jpg" alt="shoe image" width="450" height="450">
+          </div>
+          <ul class="row gap-horizontal-1 padding-top-1">
+            <li>
+              <img src="./images/image-product-1-thumbnail.jpg" alt="shoe thumbnail 1" width="100" height="100">
+            </li>
+            <li>
+              <img src="./images/image-product-2-thumbnail.jpg" alt="shoe thumbnail 1" width="100" height="100">
+            </li>
+            <li>
+              <img src="./images/image-product-3-thumbnail.jpg" alt="shoe thumbnail 1" width="100" height="100">
+            </li>
+            <li>
+              <img src="./images/image-product-4-thumbnail.jpg" alt="shoe thumbnail 1" width="100" height="100">
+            </li>
+          </ul>
+        </section>
+  
+        <!-- Product details -->
+        <section class="col-50 padding-horizontal-1">
+          <h4>Sneaker Company</h4>
+          <h1>Fall Limited Edition Sneakers</h1>
+          <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+          <h3>$125.00</h3>
+          <h4>50%</h4>
+          <h5>$250.00</h5>
+          <div class="row-100 gap-horizontal-1 cross-axis-center padding-vertical-1">
+            <svg width="12" height="4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M11.357 3.332A.641.641 0 0 0 12 2.69V.643A.641.641 0 0 0 11.357 0H.643A.641.641 0 0 0 0 .643v2.046c0 .357.287.643.643.643h10.714Z" id="a"/></defs><use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#a"/></svg>
+            <p>0</p>
+            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M12 7.023V4.977a.641.641 0 0 0-.643-.643h-3.69V.643A.641.641 0 0 0 7.022 0H4.977a.641.641 0 0 0-.643.643v3.69H.643A.641.641 0 0 0 0 4.978v2.046c0 .356.287.643.643.643h3.69v3.691c0 .356.288.643.644.643h2.046a.641.641 0 0 0 .643-.643v-3.69h3.691A.641.641 0 0 0 12 7.022Z" id="b"/></defs><use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#b"/></svg>
+          </div>
+          <button>
+            <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill-rule="nonzero"/></svg>
+            Add to cart
+          </button>
+        </section>
+      </article>
   </main>
   
   <div class="attribution">
