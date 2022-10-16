@@ -1,0 +1,231 @@
+:root{
+    --black: hsl(0, 0%, 0%);
+    --black-50: hsla(0, 0%, 0%, 0.5);
+    --white: hsl(0, 0%, 100%);
+    --gray: hsl(220, 14%, 75%);
+    --gray-dark: hsl(219, 9%, 45%);
+    --primary: hsl(26, 100%, 55%);
+    --secondary: hsl(25, 100%, 94%);
+    --light: hsl(223, 64%, 98%);
+    --dark: hsl(220, 13%, 13%);
+    --breakpoint-sm: 375px;
+    --breakpoint-m: 768px;
+    --breakpoint-lg: 1024px;
+    --breakpoint-xl: 1200px;
+    --breakpoint-xxl: 1400px;
+    --font-family-sans-serif: 'Nunito', sans-serif;
+    --font-size-base: 1rem;
+    --font-size-xxxl: 3rem;
+    --font-size-xxl: 2rem;
+    --font-size-xl: 1.5rem;
+    --font-size-l: 1.25rem;
+    --font-size-m: 1rem;
+    --font-size-s: 0.75rem;
+    --font-size-xs: 0.5rem;
+    --font-size-xxs: 0.25rem;
+    --hero-image-1: url("../images/image-mockups.png");
+    --hero-image-2: url("../images/bg-intro-desktop.svg");
+    --blog-image-1: url("../images/image-currency.jpg");
+    --blog-image-2: url("../images/image-restaurant.jpg");
+    --blog-image-3: url("../images/image-plane.jpg");
+    --blog-image-4: url("../images/image-confetti.jpg");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family-sans-serif);
+}
+
+h1,h2,h3,h4{
+    font-weight: normal;
+}
+h1{
+    font-size: var(--font-size-xxxl);
+}
+h2{
+    font-size: var(--font-size-xxl);
+}
+h3{
+    font-size: var(--font-size-xl);
+}
+h4{
+    font-size: var(--font-size-l);
+}
+
+p{
+    color: var(--gray-dark);
+    line-height: 1.6rem;
+}
+
+/* Standard li style */
+li {
+    list-style: none;
+    cursor: pointer;
+    border-bottom: solid 2px var(--white);
+    color: var(--gray-dark)
+}
+li:hover {
+    border-bottom: solid 2px var(--primary);
+    color: var(--dark);
+}
+li:active {
+    animation: fadein 500ms;
+}
+
+/* Standard a style */
+a {
+    text-decoration: none;
+    color: var(--gray-dark);
+}
+a:hover {
+    color: var(--dark);
+}
+
+/* Standard button style */
+button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    box-shadow: 1rem 1rem 1rem var(--secondary);
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    background-color: var(--primary);
+    color: var(--light);
+    font-size: var(--font-size-m);
+}
+button > svg {
+    fill: var(--light);
+    margin-right: 0.5rem;
+}
+button:hover {
+    opacity: 0.6;
+    color: var(--white);
+}
+button:active {
+    animation: fadein 500ms;
+}
+
+/* Image sytle */
+img {
+    object-fit: cover;
+}
+@media screen and (max-width: 600px) {
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+/* Height */
+.height-1 {
+    height: 1rem;
+}
+.height-2 {
+    height: 2rem;
+}
+.height-3 {
+    height: 3rem;
+}
+.height-4 {
+    height: 4rem;
+}
+.height-5 {
+    height: 5rem;
+}
+.height-100 {
+    height: 100%;
+}
+
+/* Z index */
+.z-900 {
+    z-index: 900;
+}
+
+/* Position */
+.position-relative {
+    position: relative;
+}
+.position-absolute {
+    position: absolute;
+}
+.position-fixed {
+    position: fixed;
+}
+.position-sticky {
+    position: sticky;
+}
+.position-static {
+    position: static;
+}
+
+/* Border radius */
+.border-radius-std {
+    border-radius: 0.25rem;
+}
+.border-radius-1 {
+    border-radius: 1rem;
+}
+.border-radius-2 {
+    border-radius: 2rem;
+}
+.border-radius-3 {
+    border-radius: 3rem;
+}
+.border-top-radius-std {
+    border-radius: 0.25rem 0.25rem 0 0;
+}
+.border-bottom-radius-std {
+    border-radius: 0 0 0.25rem 0.25rem;
+}
+
+/* Flex wrap */
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flex-nowrap {
+    flex-wrap: nowrap;
+}
+
+/* Max width */
+.max-width-40 {
+    max-width: 40px;
+}
+.max-width-60 {
+    max-width: 60px;
+}
+.max-width-100 {
+    max-width: 100px;
+}
+.max-width-200 {
+    max-width: 200px;
+}
+.max-width-300 {
+    max-width: 300px;
+}
+.max-width-400 {
+    max-width: 400px;
+}
+.max-width-500 {
+    max-width: 500px;
+}
+
+/* Rotage 20deg by hover */
+.rotate-20 {
+    transition: all 500ms ease-in-out;
+}
+.rotate-20:hover {
+    transform: rotate(20deg);
+}
+
+/* Rotage 600deg by hover */
+.rotate-60 {
+    transition: all 500ms ease-in-out;
+}
+.rotate-60:hover {
+    transform: rotate(60deg);
+}
