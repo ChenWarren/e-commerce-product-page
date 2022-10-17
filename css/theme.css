@@ -84,3 +84,6 @@
 .color-inherit {
     color: inherit;
 }
+.color-gray {
+    color: var(--gray);
+}

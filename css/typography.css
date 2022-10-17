@@ -82,3 +82,11 @@
 .line-height-20 {
     line-height: 2;
 }
+
+/* Letter space */
+.letter-spacing-1 {
+    letter-spacing: 1px;
+}
+.letter-spacing-2 {
+    letter-spacing: 2px;
+}
