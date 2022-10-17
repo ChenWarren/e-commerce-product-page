@@ -206,7 +206,7 @@
 /* Product thumbnail list image */
 .product-thumnail-wrapper{
     width: 25%;
-    height: 5.75rem;
+    aspect-ratio: 1 / 1;
     border-radius: 0.75rem;
     overflow: hidden;
 }
@@ -241,7 +241,7 @@
 /* Product image style */
 .product-image {
     width: 100%;
-    height: 28rem;
+    aspect-ratio: 1 / 1;
     border-radius: 1rem;
     background-size: cover;
     background-position: center;
