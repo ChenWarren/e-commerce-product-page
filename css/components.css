@@ -1,3 +1,16 @@
+/* Navbar container */
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+@media screen and (max-width: 768px) {
+    .navbar-container {
+        width: 100%;
+        padding: 0 1.5rem;
+    }
+}
+
 /* Main button style */
 .main-button {
     height: 2.25rem;
@@ -261,3 +274,30 @@
     cursor: pointer;
     padding: 0 1rem;
 }
+
+/* Product title */
+.product-title { 
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+@media screen and (max-width: 768px) {
+    .product-title {
+        font-size: 2rem;
+    }
+}
+
+/* Price label */
+.price-label {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+    .price-label {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+

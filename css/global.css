@@ -246,26 +246,30 @@ img {
 }
 
 /* Max width */
+.max-width-30 {
+    max-width: 2rem;
+}
+
 .max-width-40 {
-    max-width: 40px;
+    max-width: 2.5rem;
 }
 .max-width-60 {
-    max-width: 60px;
+    max-width: 3.75rem;
 }
 .max-width-100 {
-    max-width: 100px;
+    max-width: 6.25rem;
 }
 .max-width-200 {
-    max-width: 200px;
+    max-width: 12.5rem;
 }
 .max-width-300 {
-    max-width: 300px;
+    max-width: 18.75rem;
 }
 .max-width-400 {
-    max-width: 400px;
+    max-width: 25rem;
 }
 .max-width-500 {
-    max-width: 500px;
+    max-width: 31.25rem;
 }
 
 /* Rotage 20deg by hover */
